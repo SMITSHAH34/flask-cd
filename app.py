@@ -1,9 +1,9 @@
 from flask import Flask
+app = Flask(name)
 
-app = Flask(__name__)
-
-
-@app.route('/')
+@app.route("/")
 def hello():
-    return '<h1>Hello,My name is Smit!</h1>'
+    return "<h1 style='color:blue'>Hello There!</h1>"
 
+if name == "main":
+    app.run(host='0.0.0.0')
