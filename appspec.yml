@@ -34,11 +34,11 @@ hooks:
    # - location: scripts/before.sh
    #   timeout: 300
    #   runas: ubuntu
-  #AfterInstall:
-  #  - location: scripts/after.sh
-  #   timeout: 300
-  #   runas: ubuntu
+  AfterInstall:
+   - location: scripts/after.sh
+     timeout: 300
+     runas: root
   ApplicationStart:
-    - location: scripts/start.sh
-      timeout: 120
-      runas: root
+   - location: scripts/start.sh
+     timeout: 120
+     runas: root
