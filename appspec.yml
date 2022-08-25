@@ -10,7 +10,7 @@ version: 0.2
 # Otherwise, specify "os: windows".
 # (You cannot specify both "os: linux" and "os: windows".)
 os: linux
-# os: windows
+# os: linux
 files:
   - source: /
     destination: /home/ubuntu/flask
