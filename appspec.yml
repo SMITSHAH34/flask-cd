@@ -30,10 +30,10 @@ permissions:
 #   the "hooks" section altogether. A blank or incomplete "hooks" section
 #   may cause associated deployments to fail.
 hooks:
-  BeforeInstall:
-    - location: scripts/before.sh
-      timeout: 300
-      runas: ubuntu
+  #BeforeInstall:
+   # - location: scripts/before.sh
+   #   timeout: 300
+   #   runas: ubuntu
   AfterInstall:
     - location: scripts/after.sh
       timeout: 300
