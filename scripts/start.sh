@@ -1,2 +1,2 @@
-cd /home/ubuntu/flask-cicd
+cd flask
 pm2 start app.py
