@@ -1,9 +1,14 @@
 from flask import Flask
-app = Flask(name)
+# This is change that I have done
 
-@app.route("/")
-def hello():
-    return "<h1 style='color:blue'>Hello There!</h1>"
+app = Flask(__name__)
 
-if name == "main":
-    app.run(host='0.0.0.0')
+
+@app.route('/')
+def hello_world():
+    return 'Hello World'
+
+
+if __name__ == '__main__':
+
+    app.run()
